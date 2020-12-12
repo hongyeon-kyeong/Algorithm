@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Implement/11.py"
+run = "python ./Implement/10.py"
