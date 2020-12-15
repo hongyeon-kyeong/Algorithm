@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Implement/14.py"
+run = "python ./Greedy/무지의_먹방_라이브.py"
