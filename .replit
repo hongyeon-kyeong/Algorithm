@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./BFSDFS/stack.py"
+run = "python ./BFSDFS/recursive_func.py"
