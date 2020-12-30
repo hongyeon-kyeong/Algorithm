@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Greedy/무지의_먹방_라이브.py"
+run = "python ./BFSDFS/stack.py"
