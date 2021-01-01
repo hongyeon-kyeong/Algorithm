@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./정렬/두_배열의_원소_교체.py"
+run = "python ./Binary_Search/Sequential_search.py"
