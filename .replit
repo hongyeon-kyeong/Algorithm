@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./BFSDFS/미로_탈출.py"
+run = "python ./정렬/정렬라이브러리.py"
