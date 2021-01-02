@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Binary_Search/떡볶이_떡_만들기.py"
+run = "python ./Dynamic_Programming/bottom-up.py"
