@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Dynamic_Programming/효율적인_화폐_구성.py"
+run = "python ./Shortest_Path/Floyd-Warshall.py"

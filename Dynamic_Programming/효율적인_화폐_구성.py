@@ -12,9 +12,12 @@ for i in range(1,M+1) :
 		if i - coin[j] >= 0 :
 			if min > d[i - coin[j]] :
 				min = d[i-coin[j]]
-	d[i] = min + 1
+	if min < 10001 :
+		d[i] = min + 1
+	else :
+		d[i] = 10001
 
-if d[M] == 10002 :
+if d[M] == 10001 :
 	print(-1)
 else :
 	print(d[M])	
