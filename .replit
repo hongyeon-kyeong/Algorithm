@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Graph/Topology_Sort.py"
+run = "python ./Graph/커리큘럼.py"
