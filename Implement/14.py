@@ -1,35 +1,21 @@
-
-def cut_array(num, weak) :
-	res = list()
-	for i in range(num) :
-		r = list()
-		res.append(r)
-	return res
-
-def chk_len(r, dist) :
-	if len(r) == 1 : return 1
-	else :
-		str = r[0]
-		fin = r[len(r)-1]
-
-		if str > fin : return 12-(str-fin)
-		else : return fin-str
+from itertools import permutations
 
 def solution(n, weak, dist) :
-	m = len(dist)
-	for i in range(m) : 
-		answer = i
-		res = cut_array(i, weak)
-		len_list = list()
-		for r in res :
-			len_list.append(chk_len(r,dist))
-		
-		len_list.sort()
-		dist.sort()
-		for i in range(len(len_list)) :
-			if dist[i] < len_list[i] :
-				answer = -1
-				break
-		if answer != -1 :
-			return answer
+	length = len(weak)
+	for i in range(length) :
+		weak.append(weak[i] + n)
+	answer = len(dist) + 1
+	for start in range(length) :
+		for friends in list(permutations(dist, len(dist))) :
+			count = 1
+			position = weak[start] + friends[count-1]
+			for index in range(start, start+length) :
+				if position < weak[index] :
+					count += 1
+					if count > len(dist) :
+						break
+					position = weak[index] + friends[count-1]
+			answer = min(answer, count)
+	if answer > len(dist) :
+		return -1
 	return answer
