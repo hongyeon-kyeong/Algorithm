@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Graph/커리큘럼.py"
+run = "python ./Implement/14-2.py"
