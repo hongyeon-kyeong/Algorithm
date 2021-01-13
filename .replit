@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./BFS_DFS/22.py"
+run = "python ./Sort/24-T.py"
