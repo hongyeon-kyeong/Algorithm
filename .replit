@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Dynamic_Programming/35-T.py"
+run = "python ./Shortest_Path/37.py"
