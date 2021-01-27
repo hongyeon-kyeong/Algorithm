@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./SAMSUNG/48-1.py"
+run = "python ./Greedy/큰_수의_법칙.py"
