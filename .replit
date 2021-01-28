@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Greedy/큰_수의_법칙.py"
+run = "python ./Greedy/1이_될_때까지2.py"

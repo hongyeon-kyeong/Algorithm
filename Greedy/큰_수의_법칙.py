@@ -9,10 +9,10 @@ i = 0
 while m > 0 :
 	if count == k :
 		count = 0
-		i += 1
-
-	sum += data[i]
-	count += 1
+		sum += data[1]
+	else :
+		sum += data[0]
+		count += 1
 	m -= 1
 
 print(sum)
