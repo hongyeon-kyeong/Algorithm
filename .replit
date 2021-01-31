@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Greedy/1이_될_때까지2.py"
+run = "python ./Greedy/Baekjoon/1541.py"
