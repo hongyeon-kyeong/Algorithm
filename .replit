@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Greedy/Baekjoon/1931_ver2.py"
+run = "python ./Implement/Thisiscodingtest/example4-2.py"
