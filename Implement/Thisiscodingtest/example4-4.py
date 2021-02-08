@@ -1,17 +1,15 @@
-n, m = map(int, input().split())
-a, b, d = map(int, input().split())
-
-# 방문여부를 기록
-data = [[0]*m for _ in range(n)]
+n,m = map(int, input().split())
+x, y, d = map(int, input().split())
 array = []
 for _ in range(n) :
 	array.append(list(map(int, input().split())))
+data = [[0]*m for _ in range(n)]
+data[x][y] = 1
 
 dx = [-1,0,1,0]
 dy = [0,1,0,-1]
-data[a][b] = 1
 
-def rotate() :
+def turn_left() :
 	global d
 	d -= 1
 	if d == -1 :
@@ -20,30 +18,25 @@ def rotate() :
 count = 1
 turn_count = 0
 while True :
-	
-	rotate()
-	nx = a + dx[d]
-	ny = b + dy[d]
 
-	if array[nx][ny] == 0 and data[nx][ny] == 0 :
+	turn_left()
+	nx = x + dx[d]
+	ny = y + dy[d]
+
+	if data[nx][ny] == 0 and array[nx][ny] == 0 :
 		data[nx][ny] = 1
-		turn_count = 0
-		a, b = nx, ny
 		count += 1
-		continue
+		turn_count = 0
+		x, y = nx, ny
 	else :
-		turn_count +=1
-
+		turn_count += 1
 		if turn_count == 4 :
-			nx = a + dx[d]*-1
-			ny = a + dy[d]*-1
+			nx = x - dx[d]
+			ny = y - dy[d]
 
-			if array[nx][ny] != 1 :
-				a, b = nx, ny
+			if array[nx][ny] == 0 :
+				x, y = nx, ny
+				turn_count = 0
 			else :
 				break
-			turn_count = 0
-
 print(count)
-		
-
