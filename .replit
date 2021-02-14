@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Implement/Thisiscodingtest/아기_상어.py"
+run = "python ./Implement/Backjoon/2441.py"
