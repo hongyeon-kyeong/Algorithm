@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./Implement/Thisiscodingtest/example4-4_ver2.py"
+run = "python ./Implement/Thisiscodingtest/외벽_점검_ver2.py"
