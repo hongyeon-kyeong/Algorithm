@@ -38,4 +38,4 @@ while True :
 	else :
 		count += 1
 		while queue :
-			country = queue.pop()
+			country = queue.pop()ddddd
