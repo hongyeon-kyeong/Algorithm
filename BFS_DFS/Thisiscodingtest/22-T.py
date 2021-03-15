@@ -1,3 +1,4 @@
+
 from collections import deque
 def get_next_pos(pos, board) :
 	next_pos = []
