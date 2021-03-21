@@ -1,11 +1,11 @@
 import sys
 sys.setrecursionlimit(10**6)
 
-def dfs(x, y) :rrrrrr
+def dfs(x, y) :
 	dx = [-1,1,0,0,-1,-1,1,1]
 	dy = [0,0,1,-1,1,-1,1,-1]
 
-	for i in range(8) :
+	for i in range(8) : #555555ㅇㅇㅇㅇㅇㅇㅇ
 		nx = x + dx[i]
 		ny = y + dy[i]
 		if nx >= 0 and ny >= 0 and nx < h and ny < w :
