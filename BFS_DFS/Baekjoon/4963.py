@@ -5,7 +5,7 @@ def dfs(x, y) :
 	dx = [-1,1,0,0,-1,-1,1,1]
 	dy = [0,0,1,-1,1,-1,1,-1]
 
-	for i in range(8) : #555555ㅇㅇㅇㅇㅇㅇㅇ
+	for i in range(8) :
 		nx = x + dx[i]
 		ny = y + dy[i]
 		if nx >= 0 and ny >= 0 and nx < h and ny < w :
