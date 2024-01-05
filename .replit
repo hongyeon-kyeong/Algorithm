@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ./BFS_DFS/Thisiscodingtest/21-T.py"
+run = "python ./Greedy/v4/거스름돈.py"
